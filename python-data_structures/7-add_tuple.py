@@ -5,4 +5,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
     second = tuple_a[1] + tuple_b[1]
 
     result = (first, second)
-    print(result)
+    return result
