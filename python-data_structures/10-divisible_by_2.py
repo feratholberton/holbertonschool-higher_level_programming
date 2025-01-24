@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def max_integer(my_list=[]):
+def divisible_by_2(my_list=[]):
     result = []
 
     for num in my_list:
