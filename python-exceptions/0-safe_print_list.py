@@ -9,10 +9,9 @@ def safe_print_list(my_list=[], x=0):
             count += 1
 
     except IndexError:
-        print('Error: x is greater than list length.')
         pass
 
     finally:
-        print('Execution completed, We are exiting...')
+        print()
 
     return count
