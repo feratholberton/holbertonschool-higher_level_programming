@@ -9,5 +9,5 @@ def multiply_by_2(a_dictionary):
 '''
 
 ''' Python's way'''
-def simple_delete(a_dictionary):
+def multiply_by_2(a_dictionary):
     return {key: value * 2 for key, value in a_dictionary.items()}
