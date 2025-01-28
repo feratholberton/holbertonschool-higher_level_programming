@@ -25,7 +25,7 @@ class Square:
     def position(self):
         return self.__position
 
-    @property.setter
+    @position.setter
     def position(self, value):
         if (
             not isinstance(value, tuple) 
