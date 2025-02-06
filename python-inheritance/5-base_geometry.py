@@ -1,13 +1,7 @@
 #!/usr/bin/python3
-'''
-Define a class
-'''
+''' Define a class '''
 
 
 class BaseGeometry:
-    '''
-    Base geometry from
-    '''
-
-
+    ''' Empty Base geometry '''
     pass
