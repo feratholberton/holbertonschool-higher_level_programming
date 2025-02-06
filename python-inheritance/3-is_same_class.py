@@ -2,6 +2,6 @@
 ''' Define a function '''
 
 
-def is_same_class(obj, a_class):
-    ''' Type of object '''
-    return type(obj) is a_class
+def is_kind_of_class(obj, a_class):
+    ''' Instances of object '''
+    return isinstance(obj, a_class)
