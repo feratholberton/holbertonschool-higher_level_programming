@@ -5,7 +5,7 @@ This module adds 2 integers
 
 
 def add_integer(a, b=98):
-    ''' 
+    '''
     Adds 2 integers
 
     Examples:
