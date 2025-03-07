@@ -7,12 +7,12 @@ def roman_to_int(roman_string):
 
     # Roman values
     roman_values = {
-        'I': 1, 
-        'V': 5, 
-        'X': 10, 
+        'I': 1,
+        'V': 5,
+        'X': 10,
         'L': 50,
-        'C': 100, 
-        'D': 500, 
+        'C': 100,
+        'D': 500,
         'M': 1000
     }
 
