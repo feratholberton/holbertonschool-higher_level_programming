@@ -3,9 +3,9 @@ from task_00_basic_serialization import load_and_deserialize, serialize_and_save
 
 # Sample data to be serialized
 data_to_serialize = {
-    "name": "John Doe",
+    "name": "Mary Doe",
     "age": 30,
-    "city": "New York"
+    "city": "Seatle"
 }
 
 # Serialize the data to JSON and save it to a file
