@@ -7,7 +7,7 @@ def serialize_to_xml(dictionary, filename):
 			child = ET.SubElement(root, key)
 			child.text = str(value)
 
-		tree = ET.Element(root)
+		tree = ET.ElementTree(root)
 		tree.write(filename, encoding='utf-8', xml_declaration=True)
 	except Exception as exception:
 		print(f'Serialization error: {exception}')
