@@ -2,10 +2,11 @@
 '''
 This is a placeholder template for module docs
 '''
+
 import json
 
 
-def from_json_string(my_obj, filename):
+def save_to_json_file(my_obj, filename):
     '''
     This is a placeholder template for function docs
     '''
