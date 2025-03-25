@@ -4,6 +4,9 @@ This is a placeholder template for module docs
 '''
 
 class Student:
+    '''
+    This is a placeholder template for class docs
+    '''
     def __init__(self, first_name, last_name, age):
         '''
         This is a placeholder template for function docs
