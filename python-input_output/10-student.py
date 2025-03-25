@@ -24,6 +24,7 @@ class Student:
         if isinstance(attrs, list):
             return {
                 key: getattr(self, key)
-                for key in attrs if type(key) == str and hasattr(self, key)
+                for key in attrs 
+                if isinstance(key, str) and hasattr(self, key)
             }
         return self.__dict__
