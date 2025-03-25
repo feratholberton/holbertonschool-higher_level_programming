@@ -12,7 +12,7 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def class_to_json(self):
+    def to_json(self):
         '''
         This is a placeholder template for function docs
         '''
