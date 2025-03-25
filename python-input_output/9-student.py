@@ -3,6 +3,7 @@
 This is a placeholder template for module docs
 '''
 
+
 class Student:
     '''
     This is a placeholder template for class docs
