@@ -14,14 +14,14 @@ class APIHandler(BaseHTTPRequestHandler):
 			self.send_header('Content-Type', 'application/json')
 			self.end_headers()
 			data = {'name': 'John', 'age': 30, 'city': 'New York'}
-			self.wfile.write(json.dumps(data).encode())
+			self.wfile.write(json.dumps(data).encode('utf-8'))
 
 		elif self.path == '/status':
 			self.send_response(200)
 			self.send_header('Content-Type', 'application/json')
 			self.end_headers()
 			status = {'status': 'OK'}
-			self.wfile.write(json.dumps(status).encode())
+			self.wfile.write(json.dumps(status).encode('utf-8'))
 
 		elif self.path == "/info":
 			self.send_response(200)
