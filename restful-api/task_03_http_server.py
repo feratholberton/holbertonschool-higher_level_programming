@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 
@@ -19,6 +20,13 @@ class APIHandler(BaseHTTPRequestHandler):
 		elif self.path == "/info":
 			self.send_response(200)
 			self.send_header("Content-Type", "application/json")
+			self.end_headers()
+			info = {"version": "1.0", "description": "A simple API built with http.server"}
+			self.wfile.write(json.dumps(info).encode('utf-8'))
+			
+		elif self.path == "/status":
+			self.send_response(200)
+			self.send_header("Content-Type", "text/html")
 			self.end_headers()
 			info = {"version": "1.0", "description": "A simple API built with http.server"}
 			self.wfile.write(json.dumps(info).encode('utf-8'))
