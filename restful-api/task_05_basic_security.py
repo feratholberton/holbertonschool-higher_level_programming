@@ -1,22 +1,20 @@
 #!/usr/bin/python3
-"""  """
+'''API Security and Authentication Techniques'''
 from flask import Flask, jsonify, request
 from flask_httpauth import HTTPBasicAuth
-from werkzeug.security import generate_password_hash, check_password_hash
-from flask_jwt_extended import (JWTManager, jwt_required,
-                                create_access_token,
-                                get_jwt_identity)
-
+from werkzeug.security import generate_password_hash, check_password_hash 
+from flask_jwt_extended import (JWTManager, jwt_required, create_access_token, get_jwt_identity)
 
 users = {
-      "user1": {"username": "user1",
-                "password": generate_password_hash("password"),
-                "role": "user"},
-      "admin1": {"username": "admin1",
-                 "password": generate_password_hash("password"),
-                 "role": "admin"}
-      }
-
+	'user1': {
+    'username': 'user1',
+    'password': generate_password_hash('password'),
+    'role': 'user'},
+	'admin1': {
+    'username': 'admin1',
+		'password': generate_password_hash('password'),
+		'role': 'admin'}
+}
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Secret_Key_Here'
