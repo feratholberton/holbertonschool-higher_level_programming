@@ -1,3 +1,1 @@
-# Holberton School - Higher Level Programming
-
-## Python - Hello, World
+# Python - Hello, World
