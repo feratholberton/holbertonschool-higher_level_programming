@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 import random
+
 number = random.randint(-10000, 10000)
 number_last_digit = abs(number) % 10
+
+if number < 0:
+    number_last_digit = -number_last_digit
 
 if number_last_digit > 5:
     compared_result = 'greater than 5'
