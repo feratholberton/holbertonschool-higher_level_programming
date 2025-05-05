@@ -14,4 +14,5 @@ elif number_last_digit == 0:
 else:
     compared_result = 'less than 6 and not 0'
 
-print(f'Last digit of {number} is {number_last_digit} and is {compared_result}')
+print(f'Last digit of {number} is {number_last_digit} \
+    and is {compared_result}')
