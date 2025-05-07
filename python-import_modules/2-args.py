@@ -9,7 +9,7 @@ if __name__ == '__main__':
         print('0 arguments.')
     elif arguments_qty == 2:
         counter = 1
-        print('1 arguments:')
+        print('1 argument:')
         for argument in arguments[1:]:
             print(F'{counter}: {argument}')
             counter += 1
