@@ -15,7 +15,7 @@ if __name__ == '__main__':
             counter += 1
     else:
         counter = 1
-        print(F'{arguments_qty - 1} arguments.')
+        print(F'{arguments_qty - 1} arguments:')
         for argument in arguments[1:]:
             print(F'{counter}: {argument}')
             counter += 1
