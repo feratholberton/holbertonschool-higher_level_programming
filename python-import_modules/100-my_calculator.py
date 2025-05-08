@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from sys import argv
+from sys import argv, exit
 from calculator_1 import add, sub, mul, div
 
 if __name__ == '__main__':
@@ -19,7 +19,7 @@ if __name__ == '__main__':
         # Check if arguments quantity is 3
         if arguments_qty != 3:
             print(usage_error_massage)
-            return 1
+            exit(1)
         # Give name to retrieved arguments if they are three
         else:
             operand_a = int(arguments[0])
@@ -29,7 +29,7 @@ if __name__ == '__main__':
             # Check if the operator is a supported
             if operator not in supported_operators:
                 print(unknown_operator_message)
-                return 1
+                exit(1)
             else:
                 if operator == '+':
                     print(f'{operand_a} {operator} {operand_b} = {add(operand_a, operand_b)}')
