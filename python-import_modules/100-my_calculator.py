@@ -4,7 +4,7 @@ from calculator_1 import add, sub, mul, div
 
 if __name__ == '__main__':
     # Messages
-    usage_error_massage = 'Usage: ./100-my_calculator.py <a> <operator> <b>'
+    usage_error_message = 'Usage: ./100-my_calculator.py <a> <operator> <b>'
     unknown_ope_msg = 'Unknown operator. Available operators: +, -, * and /'
 
     supported_operators = ['+', '-', '*', '/']
@@ -18,7 +18,7 @@ if __name__ == '__main__':
     def calculate():
         # Check if arguments quantity is 3
         if arguments_qty != 3:
-            print(usage_error_massage)
+            print(usage_error_message)
             exit(1)
         # Give name to retrieved arguments if they are three
         else:
