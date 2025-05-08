@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import sys
+from sys import argv
 from calculator_1 import add, sub, mul, div
 
 if __name__ == '__main__':
@@ -10,7 +10,7 @@ if __name__ == '__main__':
     supported_operators = ['+', '-', '*', '/']
 
     # Get arguments excluding the file name -> sys.argv[0]
-    arguments = sys.argv[1:]
+    arguments = argv[1:]
 
     # Count retrieved arguments
     arguments_qty = len(arguments)
