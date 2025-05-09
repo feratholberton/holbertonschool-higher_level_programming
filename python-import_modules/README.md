@@ -3,3 +3,5 @@
 
 import
 \_\_import__
+
+string module
