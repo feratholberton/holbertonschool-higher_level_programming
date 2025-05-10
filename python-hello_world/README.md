@@ -10,7 +10,7 @@ This means:
 - A code point is a particular position in a table, where the position has been assigned a meaning.
 
 
-
+https://docs.python.org/3.13/library/stdtypes.html#string-methods
 ### Regular methods
 1. capitalize
 1. casefold
@@ -63,42 +63,57 @@ This means:
 
 
 ### Dunder methods
-1. \_\_add__
+1. \_\_len__
     ```python
-    s = str().__add__('String').__add__(' ').__add__('concatenation')
+        s = str('Measure this!').__len__()
     ```
     Provide syntactic sugar for this
     ```python
-    s = 'String' + ' ' + 'concatenation'
+        s = len('Measure this!')
+    ```
+
+1. \_\_add__
+    ```python
+        s = str().__add__('String').__add__(' ').__add__('concatenation')
+    ```
+    Provide syntactic sugar for this
+    ```python
+        s = 'String' + ' ' + 'concatenation'
     ```
 
 1. \_\_mul__
     ```python
-    s = str().__add__('Repeat ').__mul__(2).__mul__(3)
+        s = str().__add__('Repeat ').__mul__(2).__mul__(3)
     ```
     Provide syntactic sugar for this
     ```python
-    s = 'Repeat ' * 2 * 3
+        s = 'Repeat ' * 2 * 3
+    ```
+
+1. \_\_rmul__
+    ```python
+        s = str().__add__('Repeat ').__mul__(2).__mul__(3)
+    ```
+    Provide syntactic sugar for this
+    ```python
+        s = 'Repeat ' * 2 * 3
     ```
 
 1. \_\_mod__
     ```python
-    s = str().__add__('%s %s, %s').__mod__(('Hi', 'there', 'silly'))
+        s = str().__add__('%s %s, %s').__mod__(('Hi', 'there', 'silly'))
     ```
     Provide syntactic sugar for this
     ```python
-    s = '%s %s, %s' % ('Hi', 'there', 'silly')
+        s = '%s %s, %s' % ('Hi', 'there', 'silly')
     ```
 
-1. \_\_rmod__
-    ```
-    NotImplemented
-    ```
+1. \_\_dir__
+
 
 1. \_\_class__
 1. \_\_contains__
 1. \_\_delattr__
-1. \_\_dir__
 1. \_\_doc__
 1. \_\_eq__
 1. \_\_format__
@@ -113,16 +128,22 @@ This means:
 1. \_\_init_subclass__
 1. \_\_iter__
 1. \_\_le__
-1. \_\_len__
 1. \_\_lt__
 1. \_\_ne__
 1. \_\_new__
 1. \_\_reduce__
 1. \_\_reduce_ex__
 1. \_\_repr__
-1. \_\_rmul__
 1. \_\_setattr__
 1. \_\_sizeof__
 1. \_\_str__
-1. \_\_subclasshook__
 
+1. \_\_subclasshook__
+    ```
+        NotImplemented
+    ```
+
+1. \_\_rmod__
+    ```
+        NotImplemented
+    ```
