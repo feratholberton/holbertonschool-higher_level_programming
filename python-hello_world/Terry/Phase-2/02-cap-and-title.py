@@ -1,4 +1,4 @@
-name = "john smith"
+name = "john smiTh"
 # Use .capitalize() and .title()
 
 print(name.capitalize())
