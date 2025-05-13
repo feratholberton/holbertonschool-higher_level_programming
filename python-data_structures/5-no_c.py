@@ -1,4 +1,4 @@
-#!/usr/bin.python3
+#!/usr/bin/python3
 
 def no_c(my_string):
     new_string = ''
@@ -6,3 +6,4 @@ def no_c(my_string):
         if i.lower() != 'c':
             new_string += i
     return new_string
+
