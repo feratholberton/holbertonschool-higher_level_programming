@@ -1,5 +1,12 @@
 #!/usr/bin/python3
+square_matrix_simple = __import__('0-square_matrix_simple').square_matrix_simple
 
-def square_matrix_simple(matrix=[]):
-    squared_matrix = [[x ** 2 for x in row] for row in matrix]
-    return squared_matrix
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+new_matrix = square_matrix_simple(matrix)
+print(new_matrix)
+print(matrix)
