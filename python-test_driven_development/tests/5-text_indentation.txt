@@ -19,16 +19,9 @@ How are you?
 Fine:
 
 
-
->>> text_indentation("   T  :E.   X ?T  ")
-T
-
-E
-
-X
-
-T
-
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
 
 
 >>> text_indentation(123)
