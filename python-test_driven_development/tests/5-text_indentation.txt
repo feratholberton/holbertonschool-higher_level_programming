@@ -7,7 +7,7 @@ Holberton School
 
 >>> text_indentation("Holberton.School")
 Holberton.
-
+<BLANKLINE>
 School
 
 
