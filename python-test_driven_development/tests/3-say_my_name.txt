@@ -5,10 +5,6 @@
 My name is John Smith
 
 
->>> say_my_name("Walter", "White")
-My name is Walter White
-
-
 >>> say_my_name("Bob")
 My name is Bob
 
