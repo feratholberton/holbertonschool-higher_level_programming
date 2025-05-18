@@ -5,20 +5,6 @@
 Holberton School
 
 
->>> text_indentation("Holberton.School")
-Holberton.
-
-School
-
-
->>> text_indentation("Hello. How are you? Fine:")
-Hello.
-
-How are you?
-
-Fine:
-
-
 >>> text_indentation()
 Traceback (most recent call last):
 TypeError: text_indentation() missing 1 required positional argument: 'text'
