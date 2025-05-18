@@ -12,7 +12,8 @@ def matrix_divided(matrix, div):
 
     if (not isinstance(matrix, list) or
         not all(isinstance(row, list) for row in matrix) or
-        not all(isinstance(num, (int, float)) for row in matrix for num in row)):
+        not all(isinstance(num, (int, float)) 
+                for row in matrix for num in row)):
         raise TypeError(mtx_x_msg)
 
     row_length = len(matrix[0])
