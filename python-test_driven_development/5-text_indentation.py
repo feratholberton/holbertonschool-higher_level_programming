@@ -14,9 +14,8 @@ def text_indentation(text):
     current_line = ''
     for char in text:
         current_line += char
-        if char in '.?:':
-            print(current_line.strip())
-            print()
-            current_line = ''
-    if current_line.strip():
-        print(current_line.strip())
+        if char in [".", "?", ":"]:
+            current_line = current_line.strip()
+            current_line += "\n\n"
+
+    print(current_line.strip())
