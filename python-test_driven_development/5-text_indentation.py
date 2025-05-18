@@ -13,7 +13,21 @@ def text_indentation(text):
 
     symbols = [":", "?", "."]
 
-    for char in symbols:
-        text = (char + "\n\n").join([x.strip(" ") for x in text.split(char)])
+    # for char in symbols:
+        # text = (char + "\n\n").join([x.strip(" ") for x in text.split(char)])
 
-    print(f"{text}", end='')
+    # print(f"{text}", end='')
+
+
+    i = 0
+    while i < len(text):
+        print(text[i], end='')
+
+        if text[i] in symbols:
+            print("\n")
+            i += 1
+            while i < len(text) and text[i] == " ":
+                i += 1
+            continue
+
+        i += 1
