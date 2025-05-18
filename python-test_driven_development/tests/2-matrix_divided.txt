@@ -38,7 +38,7 @@ ZeroDivisionError: division by zero
 
 
 >>> matrix_divided([[1, 1], [3, 2]], float('inf'))
-  	[[0.0, 0.0], [0.0, 0.0]]
+[[0.0, 0.0], [0.0, 0.0]]
 
 
 >>> matrix_divided([[1, 1]])
