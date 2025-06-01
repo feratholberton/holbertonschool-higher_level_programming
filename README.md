@@ -17,3 +17,5 @@
 1. ## Python - Classes and Objects
 
 1. ## Python - More Classes and Objects
+
+1. ## Python - Inheritance
