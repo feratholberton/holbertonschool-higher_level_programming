@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+''' Define a class Rectangle'''
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
-'''Define a class Rectangle'''
 
 
 class Rectangle(BaseGeometry):
