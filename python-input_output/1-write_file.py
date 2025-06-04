@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''Write and return'''
 
+
 def write_file(filename="", text=""):
     '''
     Write a function that writes a string
