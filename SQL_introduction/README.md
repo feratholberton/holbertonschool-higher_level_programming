@@ -10,6 +10,12 @@ This project is containerized with Docker.
 
 Download the file `docker-compose.yml`
 
-Run `docker compose up -d` in the terminal
+Run `docker compose up` in the terminal
 
 **How to enter the containerized mySQL:** `docker exec --interactive --tty sql-introduction mysql -u'root' -p'rootpassword'`
+
+There are 2 bash scripts
+
+`**exec-mysql.sh**` to run the SQL Monitor
+
+`**exec-sql-script.sh**` to run SQL scripts
