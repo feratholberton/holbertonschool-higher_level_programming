@@ -1,2 +1,3 @@
 #!/bin/bash
-docker exec --interactive --tty sql-introduction mysql -u'root' -p'rootpassword'
+docker exec --interactive --tty sql-introduction\
+ mysql -u'root' -p'rootpassword'
