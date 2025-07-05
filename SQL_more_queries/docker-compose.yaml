@@ -1,0 +1,26 @@
+services:
+  sql-more-queries:
+    image: mysql:8.0
+    restart: always
+    container_name: sql-more-queries
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./:/sql-introduction-scripts
+
+  phpmyadmin:
+    depends_on:
+      - sql-more-queries
+    image: phpmyadmin:5.2.2-apache
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: sql-more-queries
+      MYSQL_ROOT_PASSWORD: rootpassword
+
+volumes:
+  mysql_data:
