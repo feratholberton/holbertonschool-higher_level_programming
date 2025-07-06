@@ -8,10 +8,10 @@ def states(username, userPassword, database_name):
     """Retrieve all states."""
 
     db = MySQLdb.connect(
-        host="localhost", 
-        port=3306, 
-        user=username, 
-        passwd=userPassword, 
+        host="localhost",
+        port=3306,
+        user=username,
+        passwd=userPassword,
         db=database_name
     )
 
