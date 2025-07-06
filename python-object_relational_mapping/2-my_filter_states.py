@@ -29,6 +29,7 @@ def states(user_name, user_password, database_name, state_name):
     cursor.close()
     database.close()
 
+
 if __name__ == "__main__":
     user_name = sys.argv[1]
     user_password = sys.argv[2]
