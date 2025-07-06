@@ -10,9 +10,9 @@ def states(user_name, user_password, database_name):
     database = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user_name=user_name,
-        user_password=user_password,
-        database_name=database_name
+        user=user_name,
+        passwd=user_password,
+        db=database_name
     )
 
     cursor = database.cursor()
@@ -31,8 +31,8 @@ def states(user_name, user_password, database_name):
 
 
 if __name__ == "__main__":
-    user_name = sys.argv[1]
-    user_password = sys.argv[2]
-    database_name = sys.argv[3]
+    user = sys.argv[1]
+    passw = sys.argv[2]
+    bd = sys.argv[3]
 
-    states(user_name, user_password, database_name)
+    states(user, passw, bd)
