@@ -19,8 +19,7 @@ def states(user_name, user_password, database_name, state_name):
     cursor.execute(
         "SELECT * FROM states " +
         "WHERE name LIKE BINARY '{}'" +
-        "ORDER BY states.id"
-        .format(state_name)
+        "ORDER BY states.id".format(state_name)
     )
     rows = cursor.fetchall()
 
