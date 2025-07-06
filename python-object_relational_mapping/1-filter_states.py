@@ -10,9 +10,9 @@ def states(user_name, user_password, database_name):
     database = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user=user_name,
-        passwd=user_password,
-        db=database_name
+        username=user_name,
+        password=user_password,
+        database=database_name
     )
 
     cursor = database.cursor()
