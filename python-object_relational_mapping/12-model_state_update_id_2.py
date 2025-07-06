@@ -8,7 +8,7 @@ from sqlalchemy.orm import Session
 from model_state import State
 
 
-def addLouisiana(user_name, user_password, database_name):
+def updateState(user_name, user_password, database_name):
     engine = create_engine(
         'mysql+mysqldb://{}:{}@localhost/{}'
         .format(user_name, user_password, database_name))
@@ -29,4 +29,4 @@ if __name__ == '__main__':
     user_password = argv[2]
     database_name = argv[3]
 
-    addLouisiana(user_name, user_password, database_name)
+    updateState(user_name, user_password, database_name)
