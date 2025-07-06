@@ -31,8 +31,8 @@ def states(user_name, user_password, database_name):
 
 
 if __name__ == "__main__":
-    user = sys.argv[1]
-    passw = sys.argv[2]
-    bd = sys.argv[3]
+    user_name = sys.argv[1]
+    user_password = sys.argv[2]
+    database_name = sys.argv[3]
 
-    states(user, passw, bd)
+    states(user_name, user_password, database_name)
