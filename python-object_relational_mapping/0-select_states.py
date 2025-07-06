@@ -3,30 +3,29 @@
 import MySQLdb
 import sys
 
-def states(mysql_username, mysql_password, database_name):
-    """Get all states"""
 
-    database = MySQLdb.connect(
-        host="localhost", 
-        port=3306,
-        username=mysql_username, 
-        password=mysql_password,
-        database=database_name
-    )
+def states(username, userPassword, database_name):
+    """Retrieve all states."""
 
-    cursor = database.cursor()
-    cursor.execute("SELECT * FROM states ORDER BY states.id")
-    rows = cursor.fetchall()
+    db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=userPassword, db=database_name)
+
+    cur = db.cursor()
+
+    cur.execute("SELECT * FROM states ORDER BY states.id")
+
+    rows = cur.fetchall()
 
     for row in rows:
         print(row)
 
-    cursor.close()
-    database.close()
+    cur.close()
+
+    db.close()
+
 
 if __name__ == "__main__":
-    username = sys.argv[1]
-    password = sys.argv[2]
-    database = sys.argv[3]
+    user = sys.argv[1]
+    passw = sys.argv[2]
+    bd = sys.argv[3]
 
-    states(username, password, database)
+    states(user, passw, bd)
