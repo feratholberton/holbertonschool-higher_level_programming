@@ -8,6 +8,7 @@ from sqlalchemy.orm import Session
 from model_state import State
 from model_city import City
 
+
 def deleteState(user_name, user_password, database_name):
     engine = create_engine(
         'mysql+mysqldb://{}:{}@localhost/{}'
