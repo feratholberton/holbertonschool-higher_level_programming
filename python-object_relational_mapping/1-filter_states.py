@@ -4,14 +4,14 @@ import MySQLdb
 import sys
 
 
-def states(username, userPassword, database_name):
+def states(user_name, user_password, database_name):
     """Filter states."""
 
     database = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user=username,
-        passwd=userPassword,
+        user=user_name,
+        passwd=user_password,
         db=database_name
     )
 
