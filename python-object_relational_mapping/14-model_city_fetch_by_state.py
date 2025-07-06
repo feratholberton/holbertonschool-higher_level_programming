@@ -15,9 +15,11 @@ def deleteState(user_name, user_password, database_name):
 
     session = Session(engine)
 
-    for city, state in (session.query(City, State)
-                        .filter(City.state_id == State.id)
-                        .order_by(City.id).all()):
+    for city, state in (
+        session.query(City, State)
+        .filter(City.state_id == State.id)
+        .order_by(City.id).all()
+    ):
 
         print("{}: ({}) {}".format(state.name, city.id, city.name))
 
