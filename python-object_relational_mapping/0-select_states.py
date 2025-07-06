@@ -7,19 +7,22 @@ import sys
 def states(username, userPassword, database_name):
     """Retrieve all states."""
 
-    db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=userPassword, db=database_name)
+    db = MySQLdb.connect(
+        host="localhost", 
+        port=3306, 
+        user=username, 
+        passwd=userPassword, 
+        db=database_name
+    )
 
-    cur = db.cursor()
-
-    cur.execute("SELECT * FROM states ORDER BY states.id")
-
-    rows = cur.fetchall()
+    cursor = db.cursor()
+    cursor.execute("SELECT * FROM states ORDER BY states.id")
+    rows = cursor.fetchall()
 
     for row in rows:
         print(row)
 
-    cur.close()
-
+    cursor.close()
     db.close()
 
 
