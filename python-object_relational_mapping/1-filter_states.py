@@ -7,7 +7,7 @@ import sys
 def states(username, userPassword, database_name):
     """Filter states."""
 
-    db = MySQLdb.connect(
+    database = MySQLdb.connect(
         host="localhost",
         port=3306,
         user=username,
@@ -15,7 +15,7 @@ def states(username, userPassword, database_name):
         db=database_name
     )
 
-    cursor = db.cursor()
+    cursor = database.cursor()
     cursor.execute(
         "SELECT * FROM states " +
         "WHERE BINARY name LIKE 'N%' " +
@@ -27,7 +27,7 @@ def states(username, userPassword, database_name):
         print(row)
 
     cursor.close()
-    db.close()
+    database.close()
 
 
 if __name__ == "__main__":
